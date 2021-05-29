@@ -30,3 +30,12 @@ class TestMC(unittest.TestCase):
     
 if __name__ == "__main__":
     unittest.main()
+
+def wallis(n):
+    s=1
+
+    for i in range(1,n+1):
+        k=4*i*i
+        s=s*k/(k-1)
+        
+    return s*2
